@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Main Page
+{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+{% block body %}
+<div class="container">
+    <body>
+      <form method="post" class="form">
+        <main class="background_main">
+          <div class="circle"></div>
+          <div class="register-form-container">
+            <h1>Search the NFT</h1>
+            <div class="form-fields">
+                <div class="form-field">
+                  <input name="text" type="text" id="address" placeholder="Address">
+                  </div>
+              </div>
+              <div class="form-button text-center">
+                <button class="button" inpput type="submit">Search</button>
+              </div>
+          </div>
+        </main>
+      </form>
+        </body>
+</div>
+{% endblock %}
