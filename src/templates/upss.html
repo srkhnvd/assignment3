@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Error
+{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+{% block body %}
+<div class="container">
+    <body>
+        <main class="background_main">
+          <div class="circle"></div>
+          <div class="register-form-container">
+            <h1>Sorry, but this address was not found in the database</h1>
+          </div>
+        </main>       
+        </body>
+</div>
+{% endblock %}

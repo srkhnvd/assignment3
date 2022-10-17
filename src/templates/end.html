@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Страница про нас
+{% endblock %}
+
+{% block body %}
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-bg-primary border-primary">
+          <h4 class="my-0 fw-normal">ADDRESS</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <p>{{address}}</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-bg-primary border-primary">
+          <h4 class="my-0 fw-normal">URL</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <p>{{url}}</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-bg-primary border-primary">
+          <h4 class="my-0 fw-normal">INFO</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <p>{{info}}</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
