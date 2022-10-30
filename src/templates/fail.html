@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Error
+{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+{% block body %}
+<div class="container">
+    <body>
+        <main class="background_main">
+          <div class="circle"></div>
+          <div class="register-form-container">
+            <h1>Sorry, but we did not find such a user</h1>
+            <div class="form-button">
+              <a href="/log" id="log" class="button">Try Again</a>
+            </div>
+          </div>
+        </main>       
+        </body>
+</div>
+{% endblock %}

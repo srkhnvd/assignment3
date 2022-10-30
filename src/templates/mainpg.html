@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Main Page
+{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+{% block body %}
+<div class="container">
+    <body>
+      <form method="post" class="form">
+        <main class="background_main">
+          <div class="circle"></div>
+          <div class="register-form-container">
+            <h1>Choose one of them</h1>
+            <div class="form-button">
+                <a href="/log" id="log" class="button">Log In</a>
+              </div>
+              <br>
+              <div class="form-button">
+                <a href="/sign" id="log" class="button">Sign Up</a>
+              </div>
+          </div>
+        </main>
+      </form>
+        </body>
+</div>
+{% endblock %}

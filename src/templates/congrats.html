@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Congrats
+{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+{% block body %}
+<div class="container">
+    <body>
+        <main class="background_main">
+          <div class="circle"></div>
+          <div class="register-form-container">
+            <h1>New user added</h1>
+            <div class="form-button">
+              <a href="/log" id="log" class="button">Sign In</a>
+            </div>
+          </div>
+        </main>       
+        </body>
+</div>
+{% endblock %}
