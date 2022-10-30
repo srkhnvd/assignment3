@@ -11,6 +11,7 @@ _____________
 * Run my app: flask --app zxc.py run
 _____________
 # Example
+![alt text](src/img/img2.png)
 ![alt text](src/img/img.png)
 _____________
 # License
