@@ -15,9 +15,9 @@ import psycopg2.extras
 import re
 from werkzeug.security import generate_password_hash, check_password_hash
 
-conn = psycopg2.connect(database="nftdb", user = "postgres", password = "32201510", host = "127.0.0.1", port = "5433")
+conn = psycopg2.connect(database="nftdb", user = "postgres", password = "32201510", host = "127.0.0.1", port = "5432")
 
-conn = psycopg2.connect(database="users", user = "postgres", password = "32201510", host = "127.0.0.1", port = "5433")
+conn = psycopg2.connect(database="users", user = "postgres", password = "32201510", host = "127.0.0.1", port = "5432")
 
 
 conn.autocommit = True
