@@ -99,7 +99,7 @@ def end():
 
 
 if __name__ == "__main__":
-    zxc.run(debug=True)
+    zxc.run(debug=True, host='0.0.0.0')
 
 
 
