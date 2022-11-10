@@ -15,9 +15,7 @@ import psycopg2.extras
 import re
 from werkzeug.security import generate_password_hash, check_password_hash
 
-conn = psycopg2.connect(database="nftdb", user = "postgres", password = "32201510", host = "127.0.0.1", port = "5432")
-
-conn = psycopg2.connect(database="users", user = "postgres", password = "32201510", host = "127.0.0.1", port = "5432")
+conn = psycopg2.connect(database="nftdb", user = "postgres", password = "32201510", host = "127.0.0.1", port = "5433")
 
 
 conn.autocommit = True
@@ -51,7 +49,7 @@ def log():
         if cur.fetchone() is None:
             return render_template("fail.html")
         else:
-            return render_template('hello.html')
+            return redirect(url_for('hello'))
 
     return render_template("log.html", form = form)
 
@@ -70,7 +68,9 @@ def sign():
 
     return render_template("sign.html", form = form)
 
-
+@zxc.route('/hello')
+def hello():
+    return render_template("hello.html")
 
 @zxc.route('/hello', methods=['POST'])
 def end():
@@ -98,8 +98,17 @@ def end():
     return render_template('end.html', address = nft_address, info = info, url = url)
 
 
+
+
+
 if __name__ == "__main__":
     zxc.run(debug=True, host='0.0.0.0')
+
+
+
+
+
+
 
 
 
